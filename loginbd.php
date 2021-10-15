@@ -4,10 +4,10 @@
 	require_once("conexao/conexao.php");
 
 	$usuario = filter_input(INPUT_POST, "usuario",FILTER_SANITIZE_STRING); //usuario se refere ao name //sanitize limpa os campos
-	$senha = filter_input(INPUT_POST, "senha",FILTER_SANITIZE_NUMBER_INT); //senha se refere a senha
+	$senha = filter_input(INPUT_POST, "senha",FILTER_SANITIZE_STRING); //senha se refere a senha
 
 
-	if(!filter_var($senha, FILTER_VALIDATE_INT)){ //valida se for numeros inteiros
+	if(!filter_var($senha, FILTER_SANITIZE_STRING)){ 
 
 		header("location:index.php?erro=1");
 
