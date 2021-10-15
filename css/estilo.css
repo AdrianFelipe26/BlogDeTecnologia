@@ -1,0 +1,97 @@
+.navbar{
+  margin-left: 0;
+}
+
+.wrapper {
+    display: flex;
+    width: 100%;
+}
+
+#sidebar {
+  text-align: left;
+  width: 280px;
+  position: absolute;
+  top: 1;
+  right: 0;
+  height: 200vh;
+  z-index: 999;
+  background: #7386D5;
+  color: #fff;
+  transition: all 0.3s;
+  background-color: #3fbaf8;
+  -webkit-box-shadow: inset 10px 0px 25px -20px rgba(0,0,0,0.75);
+  -moz-box-shadow: inset 10px 0px 25px -20px rgba(0,0,0,0.75);
+  box-shadow: inset 10px 0px 25px -20px rgba(0,0,0,0.75);
+}
+
+.texto-sombreado {
+  font-weight: bold;
+    text-shadow: black 0.1em 0.1em 0.1em
+}
+
+.post{
+  margin-right: 21rem;
+  margin-left: 2rem;
+}
+
+.post-usuario {
+  margin-right: 2rem;
+  margin-left: 2rem;
+}
+
+.nav-link:hover{
+  font-size: 10pt;
+  font-weight: bold;
+  transition: 0.3s;
+}
+
+.caixatexto {
+    width: 300px;
+}
+
+.imagem-post {
+  max-width: 400px;
+  max-height: 250px;
+
+  margin-top: 20px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.interacao {
+  margin-right: 20rem;
+  margin-left: 2rem;
+}
+
+@media screen and (max-width: 600px) {
+  .wrapper {
+    display: none;
+  }
+  
+  .post {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
+  .btn {
+    margin-top: 5px;
+  }
+
+  .caixatexto {
+    width: 15rem;
+  }
+
+  .display-3 {
+    font-size: 3rem;
+  }
+
+}
+
+@media screen and (max-width: 900px) {
+  .imagem-post{
+    margin-left: 1rem;
+  }
+}
